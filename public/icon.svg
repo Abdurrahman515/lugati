@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7474f0"/>
+      <stop offset="1" stop-color="#5b5bd6"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <g transform="translate(0 28)">
+    <polygon fill="#ffd23f" points="256,76 264.8,99.9 290.2,100.9 270.3,116.6 277.2,141.1 256,127 234.8,141.1 241.7,116.6 221.8,100.9 247.2,99.9"/>
+    <path fill="#ffffff" d="M256 190C220 166 170 160 120 172L120 340C170 328 220 334 256 358Z"/>
+    <path fill="#ffffff" fill-opacity="0.92" d="M256 190C292 166 342 160 392 172L392 340C342 328 292 334 256 358Z"/>
+    <path stroke="#5b5bd6" stroke-width="6" stroke-linecap="round" d="M256 190L256 358"/>
+    <g fill="none" stroke="#5b5bd6" stroke-opacity="0.3" stroke-width="10" stroke-linecap="round">
+      <path d="M148 218Q195 208 232 226"/>
+      <path d="M148 252Q195 242 232 260"/>
+      <path d="M148 286Q195 276 232 294"/>
+      <path d="M364 218Q317 208 280 226"/>
+      <path d="M364 252Q317 242 280 260"/>
+      <path d="M364 286Q317 276 280 294"/>
+    </g>
+  </g>
+</svg>

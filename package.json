@@ -1,0 +1,46 @@
+{
+  "name": "math-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "pwa-assets": "pwa-assets-generator --preset minimal-2023 public/icon.svg",
+    "validate": "tsx src/dev/validate.ts"
+  },
+  "dependencies": {
+    "@fontsource/noto-naskh-arabic": "^5.3.0",
+    "@fontsource/tajawal": "5.3.0",
+    "framer-motion": "^14.6.0",
+    "jspdf": "^4.2.1",
+    "lucide-react": "^1.61.0",
+    "react": "^19.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@napi-rs/canvas": "^1.1.0",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vite-pwa/assets-generator": "^2.0.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "eslint": "^10.13.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.13.0",
+    "jsdom": "^31.0.0",
+    "react-dom": "^19.3.1",
+    "tsx": "^4.19.2",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.71.2",
+    "vite": "^8.3.4",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.0.5"
+  }
+}

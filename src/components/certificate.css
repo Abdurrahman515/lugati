@@ -1,0 +1,7 @@
+.cert-panel{margin-top:.6rem}
+.cert-form{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-top:.5rem}
+.cert-form input{flex:1 1 12rem;min-width:0;padding:.55rem .8rem;border:2px solid #f3a6c3;border-radius:.8rem;font-size:1rem;background:#fff}
+.cert-form input:focus{outline:none;border-color:#d6336c}
+.btn.cert{background:#d6336c;color:#fff}
+.btn.cert:disabled{opacity:.5}
+.cert-note{margin:.4rem 0 0;font-size:.9rem}
