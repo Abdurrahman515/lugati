@@ -1,7 +1,7 @@
 import { useSyncExternalStore } from 'react'
 
-const KEY = 'lugha-app:v1'
-const UI_KEY = 'lugha-app:ui:v1'
+const KEY = 'lugha-7-app:v1'
+const UI_KEY = 'lugha-7-app:ui:v1'
 
 export type MistakeRec = { lesson: string; q: string; chosen: string; correct: string; why: string; count: number; ts: number }
 export type ExamRec = { best: number; last: number; passed: boolean; attempts: number; lockedUntil?: number; ts: number }
