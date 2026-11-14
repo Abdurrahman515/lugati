@@ -44,13 +44,13 @@ describe('Home — الصفحة الرئيسية', () => {
     fireEvent.click(head(/الوحدة الثانية/))
     expect(head(/الوحدة الثانية/).getAttribute('aria-expanded')).toBe('true')
     expect(screen.getByText(new RegExp(u2.lessons[0].title))).toBeTruthy()
-    expect(JSON.parse(localStorage.getItem('lugha-app:ui:v1')!)['unit:u2']).toBe(true)
+    expect(JSON.parse(localStorage.getItem('lugha-7-app:ui:v1')!)['unit:u2']).toBe(true)
     // ولا تدخل حالة الطيّ في بيانات التقدم المصدَّرة
     expect(exportJSON()).not.toContain('unit:u2')
   })
 
   it('حالة الطيّ المحفوظة تُستعاد عند فتح الصفحة من جديد', () => {
-    localStorage.setItem('lugha-app:ui:v1', JSON.stringify({ 'unit:u1': false, 'unit:u3': true }))
+    localStorage.setItem('lugha-7-app:ui:v1', JSON.stringify({ 'unit:u1': false, 'unit:u3': true }))
     render(<Home />)
     expect(head(/الوحدة الأولى/).getAttribute('aria-expanded')).toBe('false')
     expect(head(/الوحدة الثالثة/).getAttribute('aria-expanded')).toBe('true')

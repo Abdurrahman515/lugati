@@ -24,8 +24,8 @@ describe('قواعد المشروع', () => {
   })
   it('مفاتيح التخزين المعتمدة موجودة', () => {
     const st = raw['/src/lib/storage.ts']
-    expect(st).toContain('lugha-app:v1')
-    expect(st).toContain('lugha-app:ui:v1')
+    expect(st).toContain('lugha-7-app:v1')
+    expect(st).toContain('lugha-7-app:ui:v1')
   })
   it('لا تكرار لدوال التطبيع: stripTashkeel معرّفة في arabicText.ts فقط', () => {
     for (const [p, src] of only(/\.(ts|tsx)$/)) if (!p.endsWith('/lib/arabicText.ts')) expect(src, p).not.toMatch(/(function|const)\s+stripTashkeel/)

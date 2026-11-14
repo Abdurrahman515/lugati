@@ -27,7 +27,7 @@ describe('النجوم', () => {
     expect(s.getProgress().stars).toEqual({})
     s.setStars('l1', 2)
     expect(s.getProgress().stars.l1).toBe(2)
-    expect(JSON.parse(ls._m.get('lugha-app:v1')!).stars.l1).toBe(2)
+    expect(JSON.parse(ls._m.get('lugha-7-app:v1')!).stars.l1).toBe(2)
   })
   it('لا تنقص أبداً (تحفظ الأفضل)', async () => {
     const s = await load()
@@ -118,15 +118,15 @@ describe('التصدير والاستيراد', () => {
 })
 
 describe('حالة الطي (UI)', () => {
-  it('مفتاح منفصل lugha-app:ui:v1', async () => {
+  it('مفتاح منفصل lugha-7-app:ui:v1', async () => {
     const s = await load()
     s.saveUI({ a: true, b: false })
     expect(s.loadUI()).toEqual({ a: true, b: false })
-    expect(JSON.parse(ls._m.get('lugha-app:ui:v1')!)).toEqual({ a: true, b: false })
-    expect(ls._m.get('lugha-app:v1')).toBeUndefined()
+    expect(JSON.parse(ls._m.get('lugha-7-app:ui:v1')!)).toEqual({ a: true, b: false })
+    expect(ls._m.get('lugha-7-app:v1')).toBeUndefined()
   })
   it('بيانات تالفة ترجع كائناً فارغاً', async () => {
-    ls.setItem('lugha-app:ui:v1', '{{{')
+    ls.setItem('lugha-7-app:ui:v1', '{{{')
     const s = await load()
     expect(s.loadUI()).toEqual({})
   })
@@ -134,7 +134,7 @@ describe('حالة الطي (UI)', () => {
 
 describe('مقاومة الأعطال', () => {
   it('بيانات تقدم تالفة تبدأ من الصفر', async () => {
-    ls.setItem('lugha-app:v1', 'تالف')
+    ls.setItem('lugha-7-app:v1', 'تالف')
     const s = await load()
     expect(s.getProgress().stars).toEqual({})
   })
